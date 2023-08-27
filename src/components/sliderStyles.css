@@ -1,0 +1,145 @@
+
+.swiper-slide {
+  position: relative;
+  overflow: hidden;
+}
+
+.slide-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease;
+}
+
+/* Styles for screens with max-width of 520px */
+@media (max-width: 520px) {
+  .slide-content {
+    transform: scale(0.8);
+  }
+}
+
+/* Styles for screens with min-width of 521px and max-width of 950px */
+@media (min-width: 521px) and (max-width: 950px) {
+  .slide-content {
+    transform: scale(1);
+  }
+}
+
+/* Styles for screens with min-width of 951px */
+@media (min-width: 951px) {
+  .slide-content {
+    transform: scale(1.2);
+  }
+}
+
+/* Instagram and LinkedIn icons */
+.social-icons {
+  display: none;
+}
+
+.slide-content:hover .social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: white;
+  font-size: 24px;
+}
+
+/* Additional styles for image and text */
+.imgf {
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 10%;
+}
+
+.text-container {
+  position: absolute;
+  bottom: 20px;
+  left: 10;
+  right: 10;
+  padding: 10px 20px;
+  color: white;
+  text-align: center;
+}
+
+.name{
+  font-weight: 700;
+  color:rgb(114, 114, 238);
+}
+
+
+
+
+.slider-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.slider-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.8);
+}
+
+.image-container {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.imgf {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info-container {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.name {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.uni {
+  font-weight: 200;
+  font-size: 20px;
+  color: #888;
+}
+
+.slider-item:hover .imgf {
+  transform: scale(1.1);
+}
+
+.slider-item:hover .name {
+  color: #f94d47;
+}
+
+.slider-item:hover {
+  background-color: #f4f4f4;
+}
+

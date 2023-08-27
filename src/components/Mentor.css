@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+.fimg {
+  width: 200px;
+  height: 200px;
+}
+
+.subject {
+  padding-left: 200px;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.meet {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 52px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.02em;
+
+  background: linear-gradient(90.23deg, #234eb0 2.75%, #b656e2 104.73%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+/* Add your existing styles here */
+
+/* Styling for the entire container */
+.d-flex {
+  display: flex;
+  justify-content: space-evenly;
+  /* Adjust margin as needed */
+}
+
+/* Styling for individual person container */
+.person-container {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.person-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.fimg {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 10px auto;
+}
+
+.name_cnt {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.name_desi {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.name_btn {
+  margin-top: 10px;
+}
+
+.button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.button span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Add media queries for responsiveness if needed */
+@media (min-width: 768px) {
+  .person-container {
+    width: calc(50% - 20px);
+  }
+  
+}
+@media (min-width: 268px) {
+  .subject {
+    padding-left: 50px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .person-container {
+    width: calc(33.33% - 20px);
+  }
+}
+
+.name_btn {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.name_btn a {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #ff6f61;
+  color: white;
+  border: 2px solid #ff6f61; /* Add border */
+  border-radius: 50px;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.name_btn a:hover {
+  background-color: #f94d47;
+  transform: scale(1.05);
+  border-color: #f94d47; /* Change border color on hover */
+}
+
+.name_btn a span {
+  display: flex;
+  align-items: center;
+}
+
+.name_btn a svg {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.person-container {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.person-container:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 20px;
+  background: linear-gradient(to right, #ff6f61, #f94d47);
+  z-index: -1;
+  border-radius: 20px 20px 0 0;
+}
+
+.person-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.person-container .img {
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 15px;
+  width: 120px;
+  height: 120px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.person-container .fimg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.person-container .name_cnt {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.person-container .name_desi {
+  font-size: 16px;
+  color: #888;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+.person-container .name_btn {
+  text-align: center;
+}
+
+.person-container a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.person-container a:hover {
+  background-color: #f94d47;
+  transform: scale(1.05);
+}
+
+.person-container a span {
+  display: flex;
+  align-items: center;
+}
+
+.person-container a svg {
+  margin-left: 10px;
+  font-size: 18px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.person-container a:hover svg {
+  transform: rotate(360deg);
+}
+
+/* Cool Hover Effects */
+.person-container:hover .img {
+  transform: scale(1.1);
+}
+
+.person-container:hover .name_desi {
+  opacity: 1;
+  transform: translateY(-10px);
+}
+
+.person-container:hover a {
+  background-color: #f94d47;
+  transform: scale(1.05) translateY(-5px);
+}
+
+.mentor-heading {
+  font-family: "Arial", sans-serif;
+  position: relative;
+  font-size: 35px;
+  color: #354364; /* Text color */
+  background-color: #f4f4f4; /* Background color */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle 3D effect */
+}
+
+.mentor-prefix {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ff6b6b; /* Color for the "Mentor &" prefix */
+}
+
+.curly-braces {
+  font-size: 60px;
+  color: #ff6b6b; /* You can use any color you like */
+}

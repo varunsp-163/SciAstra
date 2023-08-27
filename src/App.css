@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.team {
+  width: 462px;
+  height: 198px;
+  left: 140px;
+  margin-top: 17vh;
+  margin-bottom: 5vh;
+  margin-left: 3vw;
+  /* top: 249px; */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 65px;
+  /* margin: 15vh 0; */
+  letter-spacing: 0.02em;
+  background: linear-gradient(90deg, #234eb0 3.66%, #9010b0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.team-head {
+  font-weight: 800;
+  font-family: Poppins;
+  font-size: 50px;
+  line-height: 45px;
+  letter-spacing: 2%;
+  width: 40vw;
+}
+
+.font-semibold {
+  font-family: Poppins;
+  font-weight: 550;
+  font-size: 25px;
+  margin-left: 5px;
+  line-height: 35px;
+  letter-spacing: 2%;
+}
+
+@media (max-width: 600px) {
+  .team-head {
+    font-weight: 800;
+    font-family: Poppins;
+    font-size: 40px;
+
+  }
+
+  .team {
+    width: 90vw;
+  }
+
+  #font-semibold {
+    font-family: Poppins;
+    font-weight: 550;
+    font-size: 15px;
+
+  }
+}
+
+.text-whiten {
+  color: white;
+  font-weight: 700;
+}
+a {
+  cursor: pointer;
+}
+
+/* Custom styling for the team section */
+.custom-team-container {
+  background-color: #fff;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.custom-team-head {
+  font-size: 46px;
+  color: #ff6b6b;
+}
+
+.custom-team-description {
+  margin-top: 20px;
+  color: #666;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  .mob-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .view{
+    padding-left: 0;
+  }
+}
+
+.view{
+  padding-left: 100px;
+  font-weight: 500;
+}

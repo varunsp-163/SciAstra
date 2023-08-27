@@ -1,0 +1,82 @@
+@media (max-width: 764px) {
+  .d-flex {
+    display: flex;
+    flex-direction: column;
+  }
+}
+a {
+  text-decoration: none;
+}
+
+.mentor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+  margin-left: 24%;
+  margin-right: 24%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.mentor:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.igmdata img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.name_cnt1 {
+  font-size: 24px;
+  color: #354364;
+  margin-bottom: 5px;
+}
+
+.name_desi1 {
+  font-size: 18px;
+  color: #6b6b6b;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-icons a {
+  font-size: 24px;
+  color: #007bff;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: #0056b3;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons a {
+  font-size: 24px;
+  color: #354364;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
